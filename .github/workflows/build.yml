@@ -9,7 +9,7 @@ jobs:
     build: 
       name: build the project 
       runs-on: ubuntu-latest
-      setps: 
+      steps: 
           - uses: actions/checkout@v3
           - name: Use Nodes.js
             uses: actions/setup-node@v3
