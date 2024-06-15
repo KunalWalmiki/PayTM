@@ -36,3 +36,10 @@ yarn-error.log*
 # Misc
 .DS_Store
 *.pem
+
+#env
+/packages/db/.env
+/apps/user-app/app/.env
+/apps/bank-webhook/.env
+
+
