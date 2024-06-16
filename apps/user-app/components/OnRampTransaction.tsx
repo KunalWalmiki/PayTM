@@ -1,5 +1,5 @@
 "use client"
-import Card from '@repo/ui/card'
+import Card from '@repo/ui/Card'
 import React from 'react'
 
 type Transactions = {
