@@ -38,5 +38,5 @@ jobs:
         script: |
           sudo docker pull kunalwalmiki/paytm:latest 
           sudo docker stop web-app || true
-          sudo docker rm web-app || true
+          sudo docker rmi web-app || true
           sudo docker run -d --name web-app -p 3005:3000 kunalwalmiki/paytm:latest 
