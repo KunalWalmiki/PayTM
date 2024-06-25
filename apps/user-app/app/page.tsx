@@ -1,17 +1,16 @@
-"use client";
-import { getServerSession } from "next-auth";
+"use server";
+import { getServerSession} from "next-auth";
 import { redirect } from "next/navigation";
 import { authOptions } from "./lib/auth";
 
 
 export default async function Page() {
 
-     const session = await getServerSession();
-    
+     const session = await getServerSession(authOptions);
 
-     if(session?.user) {
+     if(session?.data?.user) {
          
-           redirect('/dashboard');
+           redirect("/dashboard");
 
      } else {
 
